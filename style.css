@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.row .card {
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.row .card img {
+  height: 50px;
+  width: 85px;
+}
+.row .card h1 {
+  color: white;
+  font-family: "Big Shoulders Display", sans-serif;
+  line-height: 64px;
+  /* font-family: ; */
+}
+.row .card p {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+
+  /* font-family: ; */
+}
+
+.row .card button {
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 20px;
+  padding: 10px 12px;
+  cursor: pointer;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.row .card-1 button {
+  color: var(--bright-orange);
+  background: white;
+  border: 1px solid white;
+}
+.row .card-2 button {
+  color: var(--dark-cyan);
+  background: white;
+  border: 1px solid white;
+}
+.row .card-3 button {
+  color: var(--very-dark-cyan);
+  background: white;
+  border: 1px solid white;
+}
+
+.row .card button:hover {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 15px;
+  font-weight: 300;
+
+  border-radius: 20px;
+  padding: 10px 12px;
+  cursor: pointer;
+
+  /* font-family: ; */
+}
+
+.row .card-1 {
+  background: var(--bright-orange);
+  border-radius: 8px 0px 0px 8px;
+}
+.row .card-2 {
+  background: var(--dark-cyan);
+}
+.row .card-3 {
+  background: var(--very-dark-cyan);
+  border-radius: 0px 8px 8px 0px;
+}
+
+@media (max-width: 992px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .row .card-1 {
+    background: var(--bright-orange);
+    border-radius: 8px 8px 0px 0px;
+  }
+  .row .card-2 {
+    background: var(--dark-cyan);
+  }
+  .row .card-3 {
+    background: var(--very-dark-cyan);
+    border-radius: 0px 0px 8px 8px;
+  }
+}
